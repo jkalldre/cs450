@@ -41,10 +41,15 @@ TRUE 6. I have run the HardCoded classifier on the Iris dataset and obtained a r
         the over all dataset.
 
 8. Please select the category you feel best describes your assignment:
+
 1 - Some attempt was made
+
 2 - Developing, but signficantly deficient
+
 3 - Slightly deficient, but still mostly adequate
+
 4 - Meets requirements
+
 --[5 - Shows creativity and excels above and beyond requirements]--
 
 9. Provide a brief justification (1-2 sentences) for selecting that category: 
