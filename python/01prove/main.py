@@ -7,6 +7,7 @@ from sklearn.naive_bayes import GaussianNB
 from random import *
 from hardcoded import HardCodedClassifier
 ###################
+
 def main():
     print ""
     # if given True or left empty, GaussianNB is used
@@ -28,7 +29,7 @@ def standardset(classifier_type=1):
     #print(iris.target_names)
 
     # use my function to randomly divide data 70-30
-    trainset, testset = train_test_split(iris.data)
+    trainset, testset = my_train_test_split(len(iris.data))
 
     # variables to hold the sets
     data_train    = []
@@ -52,15 +53,22 @@ def standardset(classifier_type=1):
     model = classifier.fit(data_train,targets_train)
     targets_predicted = model.predict(data_test)
 
+    # Shape of the dataset
+    shape(iris.data)
+
     # to calculate accuracy
     correct = 0
     for index in range(len(testset)):
-        print "Index:", index, "Prediction:", targets_predicted[index], "Actual:", targets_test[index]
+        # print "Index:", index, "Prediction:", targets_predicted[index], "Actual:", targets_test[index]
         if targets_predicted[index] == targets_test[index]:
             correct += 1
 
-    # print calculated accuracy
-    print ((correct / float(len(testset))) * 100), "%"
+    # print number correct and calculated accuracy
+    print "Correct: [" + str(correct) + "/" + str(len(testset)) + "]"
+    print str(round(((correct / float(len(testset))) * 100),4)) + "%"
+
+def shape(dataset):
+    print "Dataset Shape: [" + str(len(dataset)) + "," + str(len(dataset[0])) + "]"
 
 def print_iris_set(dataset,iris):
     '''Print iris dataset in meaningful way'''
@@ -69,12 +77,12 @@ def print_iris_set(dataset,iris):
              ,iris.target[index], ":"\
              ,iris.target_names[iris.target[index]]
 
-def train_test_split(dataset):
+def my_train_test_split(size):
     '''Split up dataset randomly 70-30'''
-    size = len(dataset)
-    thirty = int(size*.3)
+    # size     = len(dataset)
+    thirty   = int(size*.3)
     trainset = [x for x in range(size)]
-    testset = []
+    testset  = []
     while thirty != 0:
         steal(trainset,testset)
         thirty -= 1
@@ -89,8 +97,9 @@ def steal(setA,setB):
 def advancedset():
     '''Capacity to read from file or url'''
     data = loadCSV('./pima_indian_data.csv')
-    #    data = loadCSV("https://archive.ics.uci.edu/ml/machine-learning-databases/pima-indians-diabetes/pima-indians-diabetes.data",0)
-    #showdataset(data)
+    # data = loadCSV("https://archive.ics.uci.edu/ml/machine-learning-databases\
+                #    /pima-indians-diabetes/pima-indians-diabetes.data",0)
+    # showdataset(data)
 
 def loadCSV(source,file_url=1):
     '''True to read from file

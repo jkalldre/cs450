@@ -53,6 +53,7 @@ TRUE 6. I have run the HardCoded classifier on the Iris dataset and obtained a r
 --[5 - Shows creativity and excels above and beyond requirements]--
 
 9. Provide a brief justification (1-2 sentences) for selecting that category: 
+   - I think I deserve a 5.
    - I implemented a function called loadCSV that will allow you to load a large
      dataset from either a .csv file or from a url.
    - I made it possible to run either the GaussianNB or the HardCodedClassifier
