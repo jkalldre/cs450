@@ -6,4 +6,4 @@ class HardCodedClassifier:
         pass
 
     def fit(self, data_train, targets_train):
-        return Model()
+        return HCModel()
