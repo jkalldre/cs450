@@ -67,9 +67,13 @@ Name: Jacob Alldredge
 
 7. Please select the category you feel best describes your assignment:
 A - Some attempt was made
+
 B - Developing, but significantly deficient
+
 C - Slightly deficient, but still mostly adequate
+
 D - Meets requirements
+
 --[E - Shows creativity and excels above and beyond requirements]--
 
 
