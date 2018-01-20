@@ -5,7 +5,11 @@ Name: Jacob Alldredge
 
 
 1. Please provide the URL of your public GitHub repository.
+  Course Repo
+  - https://github.com/jkalldre/cs450
 
+  Prove02 Repo
+  - https://github.com/jkalldre/cs450/tree/master/python/02Prove
 
 2. Briefly describe your overall approach to the task and highlight the most difficult part of this assignment.
 

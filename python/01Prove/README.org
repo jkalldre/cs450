@@ -10,7 +10,7 @@ Name: Jacob Alldredge
    - https://github.com/jkalldre/cs450
 
    Prove01 Repo
-   - https://github.com/jkalldre/cs450/tree/master/python/01prove 
+   - https://github.com/jkalldre/cs450/tree/master/python/01Prove 
 
 For questions 2-6, please type "True" or "False" in front of the question number.
 
@@ -34,7 +34,7 @@ TRUE 6. I have run the HardCoded classifier on the Iris dataset and obtained a r
 
      7. What accuracy do you get when running the HardCoded classifier on the Iris
         dataset and why do you think that is?
-  
+
         I got a 44.44% after multiple attempts at running, this is because my predict()
         function returns an array of all 0s. Since my test_{} set is chosen at random each
         time that the program is run there will be a different ratio of 0s selected from
@@ -52,10 +52,9 @@ TRUE 6. I have run the HardCoded classifier on the Iris dataset and obtained a r
 
 --[5 - Shows creativity and excels above and beyond requirements]--
 
-9. Provide a brief justification (1-2 sentences) for selecting that category: 
+9. Provide a brief justification (1-2 sentences) for selecting that category:
    - I think I deserve a 5.
    - I implemented a function called loadCSV that will allow you to load a large
      dataset from either a .csv file or from a url.
    - I made it possible to run either the GaussianNB or the HardCodedClassifier
      depending on input given.
-
