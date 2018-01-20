@@ -123,12 +123,6 @@ def steal(setA,setB):
     setB.append(setA[r])
     del setA[r]
 
-def advancedset():
-    # Capacity to read from file or url
-    data = loadCSV('./pima_indian_data.csv')
-    # data =
-    # showdataset(data)
-
 def loadCSV(source,file_url=1):
     '''True to read from file
        False to read from URL'''

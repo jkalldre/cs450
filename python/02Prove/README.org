@@ -1,5 +1,6 @@
 * Assignment Summary
-When your assignment is complete, please answer the questions in this text file and upload it to I-Learn.
+When your assignment is complete, please answer the questions in this text file
+and upload it to I-Learn.
 
 Name: Jacob Alldredge
 
@@ -11,27 +12,69 @@ Name: Jacob Alldredge
   Prove02 Repo
   - https://github.com/jkalldre/cs450/tree/master/python/02Prove
 
-2. Briefly describe your overall approach to the task and highlight the most difficult part of this assignment.
+2. Briefly describe your overall approach to the task and highlight the most
+   difficult part of this assignment.
 
+   To implement my KnnClassifier I first created a KnnModel. All the classifier
+   does is take in a value K and pass the data_train and targets_train to the
+   KnnModel. I create a distance matrix that records the distance between all
+   the data_test items and the data_train items. This is done to avoid repeated
+   costly calculations. In predict each row of the matrix is sorted from
+   smallest distance to greatest and the first k items are collected and their
+   classes compaired. The most common class is returned as the prediction. The
+   predictions are then returned by the model.
 
-3. Briefly describe your process for handling numeric data on different scales (i.e., normalizing).
+3. Briefly describe your process for handling numeric data on different scales
+   (i.e., normalizing).
 
+  This part was deferred to week 03 by Brother Burton.
 
-4. Describe your results for the Iris data set. (For example, what level of accuracy did you see for different values of K?
+4. Describe your results for the Iris data set. (For example, what level of
+   accuracy did you see for different values of K?
 
+  I had great results from my algorithm:
+  |  K | Accuracy_Worst | Accuracy_Best |
+  |----+---------------+--------------|
+  |  1 |      93.3333% |       100.0% |
+  |  2 |      88.8889% |     97.7778% |
+  |  3 |      91.1111% |       100.0% |
+  |  4 |      95.5556% |     97.7778% |
+  |  5 |      95.5556% |     97.7778% |
+  | 40 |      88.8889% |     88.8889% |
 
 5. How did your implementation compare to existing implementations?
 
+  |  K | Accuracy |
+  |----+----------|
+  |  1 | 95.5556% |
+  |  2 | 93.3333% |
+  |  3 | 97.7778% |
+  |  4 | 95.5556% |
+  | 40 | 88.8889% |
 
-6. Describe anything you did to go above and beyond the minimum standard requirements.
+  My algorithm ended up being about just as efficient as the sklearn algorithm.
 
+6. Describe anything you did to go above and beyond the minimum standard
+   requirements.
+
+   - I created a text interface so the user can choose between the GaussianNB,
+     HardCoded, Knn, and OTS_{}_Knn classifiers.
+   - User is provided a choice to load from a file, URL, or to load the Iris
+     dataset
+   - Implemented a distance matrix, expensive up front but allows the testing of
+     multiple Ks with no need to redo the calculations.
+   - Implemented my own split function to create test/train datasets.
 
 7. Please select the category you feel best describes your assignment:
 A - Some attempt was made
 B - Developing, but significantly deficient
 C - Slightly deficient, but still mostly adequate
 D - Meets requirements
-E - Shows creativity and excels above and beyond requirements
+--[E - Shows creativity and excels above and beyond requirements]--
 
 
 8. Provide a brief justification (1-2 sentences) for selecting that category.
+
+   I met all of the requirements stated by the specification document. I made my
+   code elegant and capable of using any data given instead of just the sklearn
+   data.
