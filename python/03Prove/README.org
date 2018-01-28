@@ -10,32 +10,37 @@ Name: Jacob Alldredge
   - https://github.com/jkalldre/cs450/tree/master/python/03Prove
 
 2. What was the most difficult part of this assignment?
-
+  - Handeling different datasets in a generic way.
 
 3. Briefly describe your process for handling non-numeric data.
-
+  - Mostly used index replacement and then normalized it with z-score
 
 4. Briefly describe your process for missing data.
-
+  - Missing data was replaced with colomn averages
 
 5. Describe your results for the Car Evaluation dataset.
-
+  - I had around 65% accuracy
 
 6. Describe your results for the Pima Indian dataset.
-
+  - I had already been using this dataset from other weeks getting around 80%
 
 7. Describe your results for the Automobile MPG dataset.
-
+  - I got a guess for each car but I was unsure how to show accuracy for regression tests.
 
 8. Describe anything you did to go above and beyond the minimum standard requirements.
-
+  - I did my own normalizing with z-score calculations
+  - I created a system for generic preprocessing that includes differnt types of delimeters,
+  and can handle categorical data. Can use both 70-30 and k-fold training
 
 9. Please select the category you feel best describes your assignment:
 A - Some attempt was made
 B - Developing, but significantly deficient
 C - Slightly deficient, but still mostly adequate
 D - Meets requirements
-E - Shows creativity and excels above and beyond requirements
-
+--[E - Shows creativity and excels above and beyond requirements]--
 
 10. Provide a brief justification (1-2 sentences) for selecting that category.
+  I invested quality time in this assignment and went above and beyond. I made
+  significant attempts to maintain reusable code and keep it modular. The same code
+  can be run on virtually any dataset. My only lacking portion is how to verify
+  regression accuracy. 
