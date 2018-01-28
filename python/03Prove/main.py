@@ -125,28 +125,30 @@ def body(classifier_type, load_type, norm=0,
     if valid == 1:
         pivot_amt = (len(data)/10)
         pivot = pivot_amt
-        sum = 0
+        s = 0
         for i in range(10):
             data_test     =   data[pivot-pivot_amt:pivot]
             targets_test  = target[pivot-pivot_amt:pivot]
-            if pivot != pivot_amt:
-                data_train    =   data[0:pivot-pivot_amt] +   data[pivot:]
-                targets_train = target[0:pivot-pivot_amt] + target[pivot:]
-            else:
-                data_train    =   data[pivot:]
-                targets_train = target[pivot:]
+            # if pivot != pivot_amt:
+            data_train = np.concatenate((data[0:pivot-pivot_amt],
+                                             data[pivot:]))
+            targets_train = np.concatenate((target[0:pivot-pivot_amt],
+                                               target[pivot:]))
+            # else:
+            #     data_train    =   data[pivot:]
+            #     targets_train = target[pivot:]
             model = classifier.fit(data_train,targets_train)
             targets_predicted = model.predict(data_test)
 
             # to calculate accuracy
             correct = 0
             for index in range(len(data_test)):
-                print index
                 if targets_predicted[index] == targets_test[index]:
                     correct += 1
-            s += (correct/float(len(data)))
-            pivot += pivot
-        print "Accuracy: "+ str(s/10.0) + "%"
+
+            s += (correct/float(len(data_test)))*10
+            pivot += pivot_amt
+        print "Accuracy: "+ str(s) + "%"
     # Shape of the dataset
     shape(data)
 
