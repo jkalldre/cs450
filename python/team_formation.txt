@@ -1,0 +1,9 @@
+Team Members:
+	Jacob Alldredge
+	Kyle West
+	David Lobaccaro
+
+High Level Project:
+	Stock Market Predictions - (Will rise/fall)
+	We will use stock trends and the influence of other
+	relevant stocks to predict future trends.
