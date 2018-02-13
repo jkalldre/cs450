@@ -1,0 +1,23 @@
+[[['average', 'yes'], ['average', 'yes']], [['high', 'yes'], ['high', 'yes']], [['good', 'yes'], ['poor', 'yes']]]
+[[['good', 'yes'], ['good', 'yes']], [['high', 'yes'], ['high', 'yes']], [['good', 'yes'], ['poor', 'yes']]]
+[[['low', 'no']], [['high', 'no']], [['poor', 'no']]]
+[[['low', 'yes']], [['high', 'yes']], [['good', 'yes']]]
+[[['average', 'no'], ['average', 'no']], [['low', 'no'], ['low', 'no']], [['poor', 'no'], ['good', 'no']]]
+[[['good', 'no']], [['low', 'no']], [['poor', 'no']]]
+[[['good', 'yes']], [['low', 'yes']], [['good', 'yes']]]
+[[['low', 'no'], ['low', 'no']], [['low', 'no'], ['low', 'no']], [['good', 'no'], ['poor', 'no']]]
+Root-0: 1
+Branch:
+1 - Child of 0: 0
+2 - Child of 1: yes
+2 - Child of 1: yes
+2 - Child of 1: 2
+3 - Child of 2: no
+3 - Child of 2: yes
+Branch:
+1 - Child of 0: 0
+2 - Child of 1: no
+2 - Child of 1: 2
+3 - Child of 2: no
+3 - Child of 2: yes
+2 - Child of 1: no
