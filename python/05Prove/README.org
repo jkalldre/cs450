@@ -2,28 +2,54 @@ When your assignment is complete, please answer the questions in this text file 
 
 
 1. Please provide a link to your classifier in your public GitHub repo.
+Course Repo
+- https://github.com/jkalldre/cs450
 
+Prove02 Repo
+- https://github.com/jkalldre/cs450/tree/master/python/05Prove
 
 2. Briefly describe your overall approach to the task and highlight the most difficult part of this assignment.
-
+  I start by transposing my dataset. I use entropy to construct my tree by
+  largest information gain. I then start branching by feature and recursively
+  repeat the process until tree is built. I then use the datapoints like a map
+  following the branches to leafs to make my predictions. Manipulating data structures
+  gave me the most trouble. I love the recursion.
 
 3. Describe the dataset that you used.
-
+  I used the sample dataset and the iris_digits dataset which is a huge dataset
+  of about 1800 entries.
 
 4. Describe your results on this dataset. (e.g., What was the size of the tree? How did your implementation compare to existing implementations? How did your decision tree compare to your kNN classifier)
-
+  I got 97% accuracy on average. My tree was consistently more accurate than my
+  knn classifier.
 
 5. Include a textual representation of the tree your algorithm produced for the iris dataset.
-
+Root-0: 1
+Branch:
+1 - Child of 0: 0
+2 - Child of 1: yes
+2 - Child of 1: yes
+2 - Child of 1: 2
+3 - Child of 2: no
+3 - Child of 2: yes
+Branch:
+1 - Child of 0: 0
+2 - Child of 1: no
+2 - Child of 1: 2
+3 - Child of 2: no
+3 - Child of 2: yes
+2 - Child of 1: no
 
 6. If applicable, please describe anything you did to go above and beyond and the results you saw.
-
+  -I used multiple datasets
+  -I used datasets of large size and many parameters.
 
 7. Please select the category you feel best describes your assignment:
 A - Some attempt was made
 B - Developing, but significantly deficient
 C - Slightly deficient, but still mostly adequate
 D - Meets requirements
-E - Shows creativity and excels above and beyond requirements
+--[E - Shows creativity and excels above and beyond requirements]--
 
 8. Provide a brief justification (1-2 sentences) for selecting that category.
+ -I met all of the requirements and went above and beyond.
