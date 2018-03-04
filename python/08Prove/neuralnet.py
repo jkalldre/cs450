@@ -31,6 +31,7 @@ class Node:
             self.weights = []
             for i in range(len(inputs)):
                 self.weights.append(self.initWeight())
+
     def sigmoid(self):
         # print self.h
         return (1.0/(1.0 + math.exp(-self.h)))

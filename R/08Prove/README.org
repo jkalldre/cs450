@@ -1,0 +1,46 @@
+When your assignment is complete, please answer the questions in this text file and upload it to I-Learn.
+
+Name: Jacob Alldredge
+
+1. Please describe your experiment/results for the Vowel dataset. How many different parameters did you try? What was the highest accuracy you obtained, and what were the parameters that produced it?
+I used 20 different combinations of gamma and C.
+I achieved an accuracy of 97.98%
+Sensitivity             0.96970
+Specificity             0.98990
+Pos Pred Value          0.91429
+Neg Pred Value          0.99661
+Prevalence              0.10000
+Detection Rate          0.09697
+Detection Prevalence    0.10606
+Balanced Accuracy       0.97980
+
+
+2. Please describe your experiment/results for the Letters dataset. How many different parameters did you try? What was the highest accuracy you obtained, and what were the parameters that produced it?
+I tried closer to 30 different combinations of gamma and C.
+I achieved an accuracy of 96.59%
+Sensitivity           0.98973  0.98707
+Specificity           0.99843  0.99953
+Pos Pred Value        0.96656  0.98707
+Neg Pred Value        0.99953  0.99953
+Prevalence            0.04380  0.03480
+Detection Rate        0.04335  0.03435
+Detection Prevalence  0.04485  0.03480
+Balanced Accuracy     0.99408  0.99330
+
+
+3. Describe anything you did to go above and beyond the minimum standard requirements.
+I went a little further and explored some of the data analysis tools that are included in Libsvm and I experimented with additional datasets.
+
+
+
+4. Please select the category you feel best describes your assignment:
+A - Some attempt was made
+B - Developing, but signficantly deficient
+C - Slightly deficient, but still mostly adequate
+D - Meets requirements
+--[E - Shows creativity and excels above and beyond requirements]--
+
+
+5. Provide a brief justification (1-2 sentences) for selecting that category.
+
+I met all of the requirements and even included extra detail. I tested around five times as many values than I needed.I went a little further and explored some of the data analysis tools that are included in Libsvm and I experimented with additional datasets.
